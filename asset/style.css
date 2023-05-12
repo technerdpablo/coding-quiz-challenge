@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 157, 106);
+
+}
+
+.container {
+    width: 500px;
+    max-width: 75%;
+    background-color: rgb(185, 206, 206);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px 5px;
+
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+    margin: 20px 0;
+
+}
+
+.btn {
+    border: solid 2px;
+    background-color:rgb(186, 211, 74);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+ .btn:hover {
+    border-color:black;
+
+ }
+
+ .btn.correct {
+    background-color: rgb(68, 160, 68);
+
+ }
+
+ .btn.wrong {
+    background-color: rgb(182, 46, 46);
+ }
+
+
+.start-btn , .next-btn {
+    font-weight: bold;
+}
+
+.controls  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
